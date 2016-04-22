@@ -1,0 +1,56 @@
+html, body {
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+.nav-wrapper { margin: 0 1em; }
+
+.logo { font-family: "Oleo Script", 'Roboto', 'Helvetica', sans-serif; }
+
+h1.logo {
+	margin-top: 4em;
+	margin-bottom: 0;
+}
+
+.lead {
+	margin-top: 0;
+	font-size: 1.2em;
+}
+
+.login { margin-top: 10em; }
+.subs { margin-top: 9.3em; }
+
+input[type="submit"] { outline: none; }
+
+.connexion,
+.inscription {
+	background: url("../img/connexion.jpg") no-repeat top;
+	background-color: #4CAF50;
+	background-position-y: 64px;
+	background-blend-mode: multiply;
+}
+
+.featured {
+	min-height: 160px;
+}
+
+.featured-1 {
+	background-image: url("../img/f1.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.featured-2 {
+	background-image: url("../img/f2.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.featured-3 {
+	background-image: url("../img/f3.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
