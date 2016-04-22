@@ -1,4 +1,4 @@
-<?php $bodyclass = "mannequin"; $connected = true;?>
+<?php $bodyclass = "mannequin"; $connected = true; $active="";?>
 <?php include_once '_partials/header.php'; ?>
 <?php include_once '_partials/menu.php'; ?>
 <div class="container">
@@ -12,90 +12,84 @@
 			<div class="card">
 				<div class="card-content">
 					<span class="card-title">Général</span>
-					<div class="row">
-						<form class="col s12">
-							<div class="row">
-								<div class="input-field col s12">
-									<select id="sexe">
-										<option value disabled selected>Choisir le sexe</option>
-										<option value="1">Femme</option>
-										<option value="2">Homme</option>
-									</select>
-									<label for="sexe" >Sexe</label>
-								</div>
+					<form>
+						<div class="row">
+							<div class="input-field col s6">
+								<select id="sexe">
+									<option value disabled selected>Choisir le sexe</option>
+									<option value="1">Femme</option>
+									<option value="2">Homme</option>
+								</select>
+								<label for="sexe" >Sexe</label>
 							</div>
-							<div class="row">
-								<div class="input-field col s12">
-									<select id="taille">
-										<option value disabled selected>Choisir la taille</option>
-										<option value="130">130cm</option>
-										<option value="135">135cm</option>
-										<option value="140">140cm</option>
-										<option value="145">145cm</option>
-										<option value="150">150cm</option>
-										<option value="155">155cm</option>
-										<option value="160">160cm</option>
-										<option value="165">165cm</option>
-										<option value="170">170cm</option>
-										<option value="175">175cm</option>
-										<option value="180">180cm</option>
-										<option value="185">185cm</option>
-										<option value="190">190cm</option>
-									</select>
-									<label for="taille">Taille</label>
-								</div>
+							<div class="input-field col s6">
+								<input type="number" placeholder="30" id="age">
+								<label for="age">Âge</label>
 							</div>
-							<div class="row">
-								<div class="input-field col s12">
-									<select id="poids">
-										<option value disabled selected>Choisir le poids</option>
-										<option value="60">60kg</option>
-										<option value="65">65kg</option>
-										<option value="70">70kg</option>
-										<option value="75">75kg</option>
-										<option value="80">80kg</option>
-										<option value="85">85kg</option>
-										<option value="90">90kg</option>
-										<option value="95">95kg</option>
-										<option value="100">100kg</option>
-										<option value="105">105kg</option>
-										<option value="110">110kg</option>
-									</select>
-									<label for="poids">Poids</label>
-								</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s6">
+								<input type="number" placeholder="180" id="taille">
+								<label for="taille">Taille</label>
 							</div>
-							<div class="row">
-								<div class="input-field col s12">
-									<input type="number" placeholder="30" id="age">
-									<label for="age">Âge</label>
-								</div>
+							<div class="input-field col s6">
+								<input type="number" placeholder="60" id="poids">
+								<label for="poids">Poids</label>
 							</div>
-							<div class="row">
-								<div class="input-field col s12">
-									<select id="couleur">
-										<option value disabled selected>Choisir la couleur</option>
-										<option value="1">Couleur 1</option>
-										<option value="2">Couleur 2</option>
-										<option value="3">Couleur 3</option>
-										<option value="4">Couleur 4</option>
-										<option value="5">Couleur 5</option>
-										<option value="6">Couleur 6</option>
-									</select>
-									<label for="couleur">Couleur de peau</label>
-								</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<select id="couleur">
+									<option value disabled selected>Choisir la couleur</option>
+									<option value="1">Couleur 1</option>
+									<option value="2">Couleur 2</option>
+									<option value="3">Couleur 3</option>
+								</select>
+								<label for="couleur">Couleur de peau</label>
 							</div>
-							<div class="row">
-								<div class="col s12 center">
-									<a href="cheveux.php" class="waves-effect waves-light btn green">Choix des cheveux</a>
-								</div>
+						</div>
+						<div class="row">
+							<div class="col s12 center">
+								<a href="#modal1" class="waves-effect waves-light btn green modal-trigger">Choix des cheveux</a>
 							</div>
-						</form>
-					</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-content">
+					<span class="card-title">Mensurations</span>
+					<form>
+						<div class="row">
+							<div class="input-field col s6">
+								<input type="number" placeholder="90" id="poitrine">
+								<label for="poitrine">Tour de poitrine</label>
+							</div>
+							<div class="input-field col s6">
+								<input type="number" placeholder="70" id="ttaille">
+								<label for="ttaille">Tour de taille</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s4">
+								<input type="number" placeholder="100" id="hanche">
+								<label for="hanche">Tour de hanche</label>
+							</div>
+							<div class="input-field col s4">
+								<input type="number" placeholder="50" id="cuisse">
+								<label for="cuisse">Tour de cuisse</label>
+							</div>
+							<div class="input-field col s4">
+								<input type="number" placeholder="85" id="ljambe">
+								<label for="ljambe">Longueur de jambe</label>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 			<div class="center">
 				<a href="#" class="waves-effect waves-light btn green">Importer</a>
-				<a href="#" class="waves-effect waves-light btn green">Utiliser la webcam</a>
+				<a href="#modal2" class="waves-effect waves-light btn green modal-trigger">Utiliser la webcam</a>
 			</div>
 		</div>
 		<div class="col s8">
@@ -114,6 +108,54 @@
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
+<div id="modal1" class="modal">
+	<div class="modal-content">
+		<h5>Choix des cheveux</h5>
+		<div class="row">
+			<div class="col s6">
+				<div class="row">
+					<div class="col s12">
+						<div class="input-field">
+							<select id="xcouleur">
+								<option value disabled >Choisir la couleur</option>
+								<option value="1" selected>Blond 1</option>
+								<option value="2">Couleur 2</option>
+								<option value="3">Couleur 3</option>
+							</select>
+							<label for="xcouleur">Couleur des cheveux</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s4"><img src="./assets/img/hair-1.png" alt="" class="responsive-img"></div>
+					<div class="col s4"><img src="./assets/img/hair-2.png" alt="" class="responsive-img"></div>
+					<div class="col s4"><img src="./assets/img/hair-3.png" alt="" class="responsive-img"></div>
+					<div class="col s4"><img src="./assets/img/hair-4.png" alt="" class="responsive-img"></div>
+					<div class="col s4"><img src="./assets/img/hair-5.png" alt="" class="responsive-img"></div>
+					<div class="col s4"><img src="./assets/img/hair-6.png" alt="" class="responsive-img"></div>
+					<div class="col s4"><img src="./assets/img/hair-7.png" alt="" class="responsive-img"></div>
+					<div class="col s4"><img src="./assets/img/hair-8.png" alt="" class="responsive-img"></div>
+					<div class="col s4"><img src="./assets/img/hair-9.png" alt="" class="responsive-img"></div>
+					<div class="col s4"><img src="./assets/img/hair-10.png" alt="" class="responsive-img"></div>
+					<div class="col s4"><img src="./assets/img/hair-11.png" alt="" class="responsive-img"></div>
+					<div class="col s4"><img src="./assets/img/hair-12.png" alt="" class="responsive-img"></div>
+				</div>
+			</div>
+			<div class="col s6 center">
+				<img src="./assets/img/hair.jpg" alt="" class="responsive-img">
+				<a href="#!" class="modal-close waves-effect waves-light btn green">Valider la coiffure</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="modal2" class="modal">
+	<div class="modal-content center">
+		<h5>Analyse en cours…</h5>
+		<p>Placez vous façe à la camera et positionnez votre corps à l'intérieur du modèle*<p>
+		<img src="./assets/img/webcam.png" alt="" class="responsive-img">
+		<small class="right">(*les proportions peuvent ne pas correspondre exactement)</small>
 	</div>
 </div>
 <?php include_once '_partials/footer.php'; ?>

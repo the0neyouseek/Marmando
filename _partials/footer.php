@@ -77,6 +77,7 @@
 				    selectYears: 20 // Creates a dropdown of 15 years to control year
 				  });
 				  $('select').material_select();
+				  $('.modal-trigger').leanModal();
 			});
 		</script>
 	</body>
