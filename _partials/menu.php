@@ -28,7 +28,7 @@
 				</ul>
 				<?php endif;?>
 
-				<li><a class="grey-text text-darken-1" href="#"><i class="material-icons">shopping_basket</i></a></li>
+				<li class=""><a class="grey-text text-darken-1" href="./panier.php"><i class="material-icons">shopping_basket</i></a></li>
 				<li><a class="grey-text text-darken-1" href="#"><i class="material-icons">search</i></a></li>
 			</ul>
 			<ul class="side-nav" id="mobile">
@@ -40,7 +40,7 @@
 				<li class="<?php if($active=="Nouveautés"){echo "active";} ?>"><a class="grey-text text-darken-1" href="index.php">Nouveautés</a></li>
 				<li class="<?php if($active=="Contact"){echo "active";} ?>"><a class="grey-text text-darken-1" href="index.php">Contact</a></li>
 
-				<li><a class="grey-text text-darken-1" href="#"><i class="material-icons left">shopping_basket</i>Mon panier</a></li>
+				<li class=""><a class="grey-text text-darken-1" href="./panier.php"><i class="material-icons left">shopping_basket</i>Mon panier</a></li>
 				<li><a class="grey-text text-darken-1" href="#"><i class="material-icons left">search</i>Rechercher</a></li>
 			</ul>
 		</div>
