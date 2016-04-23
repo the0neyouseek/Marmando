@@ -9,14 +9,14 @@
 			<ul class="right hide-on-med-and-down">
 				<li class="<?php if($active=="Accueil"){echo "active";} ?>"><a class="grey-text text-darken-1" href="index.php">Accueil</a></li>
 				<li class="<?php if($active=="Homme"){echo "active";} ?>"><a class="grey-text text-darken-1" href="index.php">Homme</a></li>
-				<li class="<?php if($active=="Femme"){echo "active";} ?>"><a class="grey-text text-darken-1" href="index.php">Femme</a></li>
+				<li class="<?php if($active=="Femme"){echo "active";} ?>"><a class="grey-text text-darken-1" href="women.php">Femme</a></li>
 				<li class="<?php if($active=="Accessoires"){echo "active";} ?>"><a class="grey-text text-darken-1" href="index.php">Accessoires</a></li>
 				<li class="<?php if($active=="Promotions"){echo "active";} ?>"><a class="grey-text text-darken-1" href="index.php">Promotions</a></li>
 				<li class="<?php if($active=="Nouveautés"){echo "active";} ?>"><a class="grey-text text-darken-1" href="index.php">Nouveautés</a></li>
 				<li class="<?php if($active=="Contact"){echo "active";} ?>"><a class="grey-text text-darken-1" href="index.php">Contact</a></li>
 
 				<?php if ($connected):?>
-				<li><a class="dropdown-button grey-text text-darken-1" href="#!" data-activates="dropdown1"><i class="material-icons left">account_circle</i>Guillaume Broder<i class="material-icons right">arrow_drop_down</i></a></li>
+				<li><a class="dropdown-button grey-text text-darken-1" href="#!" data-activates="dropdown1"><i class="material-icons left">account_circle</i>Marie Motte<i class="material-icons right">arrow_drop_down</i></a></li>
 				<ul id="dropdown1" class="dropdown-content">
 				  <li><a class="grey-text text-darken-1" href="#!">Mon compte</a></li>
 				  <li><a class="grey-text text-darken-1" href="./mannequin.php">Mon mannequin</a></li>
@@ -34,7 +34,7 @@
 			<ul class="side-nav" id="mobile">
 				<li class="<?php if($active=="Accueil"){echo "active";} ?>"><a class="grey-text text-darken-1" href="index.php">Accueil</a></li>
 				<li class="<?php if($active=="Homme"){echo "active";} ?>"><a class="grey-text text-darken-1" href="index.php">Homme</a></li>
-				<li class="<?php if($active=="Femme"){echo "active";} ?>"><a class="grey-text text-darken-1" href="index.php">Femme</a></li>
+				<li class="<?php if($active=="Femme"){echo "active";} ?>"><a class="grey-text text-darken-1" href="women.php">Femme</a></li>
 				<li class="<?php if($active=="Accessoires"){echo "active";} ?>"><a class="grey-text text-darken-1" href="index.php">Accessoires</a></li>
 				<li class="<?php if($active=="Promotions"){echo "active";} ?>"><a class="grey-text text-darken-1" href="index.php">Promotions</a></li>
 				<li class="<?php if($active=="Nouveautés"){echo "active";} ?>"><a class="grey-text text-darken-1" href="index.php">Nouveautés</a></li>

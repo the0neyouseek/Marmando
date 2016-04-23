@@ -1,4 +1,4 @@
-<?php $bodyclass = "connexion"; ?>
+<?php $bodyclass = "connexion"; $connected = false; $active = ""; ?>
 <?php include_once '_partials/header.php'; ?>
 <?php include_once '_partials/menu.php'; ?>
 	<div class="container">
